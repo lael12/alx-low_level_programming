@@ -1,7 +1,7 @@
-#include <studio.h>
+#include <stdio.h>
 /**
- * main - Entry
- * Return: Always 0
+ * main - outputs the size of data types
+ * Return: 0 if there are no errors
  */
 int main(void)
 {
