@@ -1,31 +1,41 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
- * main - prints all possible combinations of two digits
- * Return: 0 if the the output is successful
+ * main - print all possible combinations of 3 digits
+ * Return: 0 if the program is successful
  */
 int main(void)
 {
-int n;
-int o = 0;
+int c;
+int d;
+int e = 0;
 
-while (o < 10)
+while (e < 10)
 {
-n = 0;
-while (n < 10)
+d = 0;
+while (d < 10)
 {
-if (o != n && o < n)
+c = 0;
+while (c < 10)
 {
-putchar('0' + o);
-putchar('0' + n);
-if (n + o != 17)
+if (c != d && d != e && e < d && d < c)
+{
+putchar('0' + e);
+putchar('0' + d);
+putchar('0' + c);
+
+if (c + d + e != 9 + 8 + 7)
 {
 putchar(',');
 putchar(' ');
 }
 }
-n++;
+
+c++;
 }
-o++;
+d++;
+}
+e++;
 }
 putchar('\n');
 return (0);
