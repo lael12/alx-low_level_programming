@@ -88,4 +88,12 @@ char **strtow(char *str)
 		for (l = 0; l < letters; l++)
 		{
 			ptr[a][l] = str[index];
+			index++;
+		}
+		ptr[a][l] = '\0';
+	}
+	ptr[a] = NULL;
+	ptr[a + 1] = NULL;
 
+	return (ptr);
+}
